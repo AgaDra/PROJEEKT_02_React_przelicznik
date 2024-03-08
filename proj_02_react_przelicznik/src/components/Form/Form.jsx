@@ -40,7 +40,11 @@ const Form = () => {
   };
 
   return (
-    <form className={styles.formWrapper} onSubmit={handleFormSubmit}>
+    <form
+      className={styles.formWrapper}
+      onSubmit={handleFormSubmit}
+      data-netlify="true"
+      data-netlify-recaptcha="true">
       <div className={styles.dataWrapper}>
         <input
           name="amount"
